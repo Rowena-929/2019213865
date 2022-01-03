@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table {
+            border-left: 0.5px solid #d3d3d3;
+            border-top: 0.5px solid #d3d3d3;
+            border-right: 0.5px solid #d3d3d3;
+            border-bottom: 0.5px solid #d3d3d3;
+        } */
+        .head {
+            height: 40px;
+            font-size:20px;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        table th{
+            border-radius: 5%;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(196, 229, 238);
+        }
+        table td {
+            width: 80px;
+            height: 90px;
+            text-align: center;
+            font-size: 15px;
+            /* font-family: 'Microsoft JhengHei"'; */
+        }
+        .col0 {
+            background-color: rgb(196, 229, 238);
+        }
+        .col1 {
+            border-radius: 5%;
+            background-color: rgb(119, 230, 119);
+        }
+        .col2 {
+            border-radius: 5%;
+            background-color: rgb(221, 221, 83);
+        }
+        .col3 {
+            border-radius: 5%;
+            background-color: rgb(219, 172, 90);
+        }
+        .col4 {
+            border-radius: 5%;
+            background-color: rgb(84, 196, 196);
+        }
+        .col5 {
+            border-radius: 5%;
+            background-color: rgb(189, 224, 137);
+        }
+        .coln {
+            background-color: none;
+        }
+        .a {
+        }
+        .schedule{
+            margin-left: 50px;
+            float: left;
+            background-color: beige;
+            padding: 5px 20px 30px 20px;
+        }
+        .detail {
+            margin-top: 30px;
+            margin-left: 200px;
+            padding-top: 18px;
+            width: 200px;
+            height: 200px;
+            /* border: 1px, solid, gray; */
+            border-radius: 10%;
+            float: left;
+            background-color: rgb(193, 236, 247);
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule">
+        <div class="head">课表</div>
+        <table cellspacing="3">
+            <tr>
+                <th></th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+            </tr>
+            <tr>
+                <td class="col0">8:00-9:40</td>
+                <td class="coln"></td>
+                <td class="col2">web程序设计</td>
+                <td class="col3">人工智能</td>
+                <td class="col4">信息检索技术</td>
+                <td class="col5">操作系统原理</td>
+            </tr>
+            <tr>
+                <td class="col0">10:10-11:50</td>
+                <td class="col1">微机原理与接口技术</td>
+                <td class="col2">英语创意写作工坊</td>
+                <td class="col3">操作系统原理</td>
+                <td class="col4">习近平新时代中国特色社会主义思想概论</td>
+                <td class="col5">共享人文：英语语言文化纵览</td>
+            </tr>
+            <tr>
+                <td class="col0">14:00-15:40</td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+                <td class="col4">web程序设计</td>
+                <td class="coln"></td>
+            </tr>
+            <tr>
+                <td class="col0">16:10-17:50</td>
+                <td class="col1">专业英语</td>
+                <td class="col2">信息检索技术</td>
+                <td class="col3">微机原理与接口技术</td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+            </tr>
+            <tr>
+                <td class="col0">18:30-20:10</td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+                <td class="coln"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="a"></div>
+    <script>
+        var col1 = document.getElementsByClassName("col1");
+        var col2 = document.getElementsByClassName("col2");
+        var col3 = document.getElementsByClassName("col3");
+        var col4 = document.getElementsByClassName("col4");
+        var col5 = document.getElementsByClassName("col5");
+
+        var detail = document.getElementsByClassName("a");
+        col1[0].onmouseover = function(){
+            detail[0].innerHTML = "教室：n217 </br>教师：姚华雄</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col1[0].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col1[1].onmouseover = function(){
+            detail[0].innerHTML = "教室：n112 </br>教师：李增阳</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col1[1].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col2[0].onmouseover = function(){
+            detail[0].innerHTML = "教室：n520 </br>教师：涂新辉</br>周数：1-18周双周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col2[0].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col2[1].onmouseover = function(){
+            detail[0].innerHTML = "教室：8506 </br>教师：江娟</br>周数：1-9周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col2[1].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col2[2].onmouseover = function(){
+            detail[0].innerHTML = "教室：n108 </br>教师：张茂元</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col2[2].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col3[0].onmouseover = function(){
+            detail[0].innerHTML = "教室：n520 </br>教师：张连发</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col3[0].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col3[1].onmouseover = function(){
+            detail[0].innerHTML = "教室：n213 </br>教师：喻莹</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col3[1].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col3[2].onmouseover = function(){
+            detail[0].innerHTML = "教室：n535 </br>教师：姚华雄</br>周数：1-19周单周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col3[2].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col4[0].onmouseover = function(){
+            detail[0].innerHTML = "教室：n528 </br>教师：张茂元</br>周数：1-18周双周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col4[0].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col4[1].onmouseover = function(){
+            detail[0].innerHTML = "教室：n223 </br>教师：吕惠东</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col4[1].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col4[2].onmouseover = function(){
+            detail[0].innerHTML = "教室：n108 </br>教师：涂新辉</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col4[2].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col5[0].onmouseover = function(){
+            detail[0].innerHTML = "教室：n524 </br>教师：喻莹</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col5[0].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+
+        col5[1].onmouseover = function(){
+            detail[0].innerHTML = "教室：3216 </br>教师：邹心胜</br>周数：1-19周"
+            detail[0].className = "detail";
+            detail = document.getElementsByClassName("detail");
+        }
+        col5[1].onmouseout = function(){
+            detail[0].innerHTML = '';
+            detail[0].className = 'a';
+            detail = document.getElementsByClassName("a");
+        }
+    </script>
+</body>
+</html>
