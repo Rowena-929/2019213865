@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: 100% 100%;
+        }
+        a {
+            text-decoration: none;
+            color:black;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 250px 800px;
+            grid-template-rows: 300px 300px 300px;
+            margin-left:70px;
+            margin-right: 70px;
+        }
+        .nav {
+            grid-row: 1/4;
+            grid-column: 1;
+            background-color: rgba(226, 212, 102, 0.5);
+        }
+        .text {
+            text-align: center;
+            margin: 70px auto;           
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .img {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        #basicinf {
+            background-color: rgba(221, 221, 190, 0.6);
+            padding: 10px;
+        }
+        #basicson {
+            background-color: rgba(222, 184, 135, 0.6);
+            padding: 10px;
+        }
+        .inf {
+            padding-left: 30px;
+            padding-right: 30px;
+            display: grid;
+            height: 200px;
+            grid-template-rows: 33.33% 33.33% 33.33%;
+            grid-template-columns: 50% 50%;
+            place-items: center start;
+        }
+        .header {
+            margin-left: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .song {
+            margin-top:10px;
+            display: grid;
+            height: 200px;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            place-items: start center;
+        }
+        .songname {
+            font-size: 20px;
+            text-align: center;
+        }
+        #basicmovie {
+            background-color: rgba(173, 233, 158, 0.6);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="nav"> 
+            <img class="img" src="pic1.jpg" alt="" height="200" weight="200">
+            <div class="text"><a href="#basicinf">个人资料</a></div>
+            <div class="text"><a href="#basicson">喜欢的听的歌</a></div>
+            <div class="text"><a href="#basicmovie">爱看的电影</a></div>
+        </div>
+        <div id="basicinf">
+            <div class="header">个人资料</div>
+            <div class="inf">
+                <div>姓名：吴微</div>
+                <div>性别：女</div>
+                <div>英文名：Rowena</div>
+                <div>github：Rowena_929</div>
+                <div>邮箱：123456789@126.com</div>
+                <div>QQ：123456789</div>
+            </div>
+        </div>
+        <div id="basicson">
+            <div class="header">喜欢听的歌</div>
+                <div class="song">
+                    <div>
+                        <div><img src="fish.jfif" height="150" weight="150" alt=""></div>
+                        <div class="songname">大鱼</div>
+                    </div>
+                    <div>
+                        <div><img src="flower.jfif" height="150" weight="150" alt=""></div>
+                        <div class="songname">问花</div>
+                    </div>
+                    <div>
+                        <div><img src="touch.jfif" height="150" weight="150" alt=""></div>
+                        <div class="songname">触不可及</div>
+                    </div>
+                </div>
+        </div>
+        <div id="basicmovie">
+            <div class="header">爱看的电影</div>
+            <div class="song">
+                <div>
+                    <div><img src="interstellar.jpg" height="150" weight="150" alt=""></div>
+                    <div class="songname">星际穿越</div>
+                </div>
+                <div>
+                    <div><img src="harry.jpg" height="150" weight="150" alt=""></div>
+                    <div class="songname">哈利波特</div>
+                </div>
+                <div>
+                    <div><img src="wanderingearth.jpg" height="150" weight="150" alt=""></div>
+                    <div class="songname">流浪地球</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
