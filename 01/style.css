@@ -1,0 +1,69 @@
+body {
+    background-image: url("background.jpg");
+    background-size: 100% 100%;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+#container {
+    display: grid;
+    grid-template-columns: 250px 800px;
+    grid-template-rows: 300px 300px 300px;
+    margin-left:70px;
+    margin-right: 70px;
+}
+.nav {
+    grid-row: 1/4;
+    grid-column: 1;
+    background-color: rgba(226, 212, 102, 0.5);
+}
+.text {
+    text-align: center;
+    margin: 70px auto;           
+    font-size: 20px;
+    font-weight: bold;
+}
+.img {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+#basicinf {
+    background-color: rgba(221, 221, 190, 0.6);
+    padding: 10px;
+}
+#basicson {
+    background-color: rgba(222, 184, 135, 0.6);
+    padding: 10px;
+}
+.inf {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    height: 200px;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 50% 50%;
+    place-items: center start;
+}
+.header {
+    margin-left: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.song {
+    margin-top:10px;
+    display: grid;
+    height: 200px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    place-items: start center;
+}
+.songname {
+    font-size: 20px;
+    text-align: center;
+}
+#basicmovie {
+    background-color: rgba(173, 233, 158, 0.6);
+    padding: 10px;
+}
